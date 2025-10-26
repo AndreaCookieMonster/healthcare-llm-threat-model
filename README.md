@@ -1,5 +1,15 @@
 # 🏥 LLM Threat Model for Healthcare
 
+## Latest additions — Oct 2025
+We’ve added a focused pack of **new, high-impact LLM vulnerabilities in healthcare** that are not yet reflected in the Top-10 set. See: [additions/2025-10/index.md](./additions/2025-10/index.md)
+
+Highlights:
+- Oncology & surgical **VLM prompt injection** demonstrations at scale (peer-reviewed and NIH-indexed preprint).
+- **Adversarial hallucination** attacks in clinical decision support with high base rates.
+- **Training-data poisoning** (Nat Med) showing practical model compromise pathways.
+- **Safety messaging collapse** in modern GenAI outputs (npj Digit Med).
+- **Privacy risks**: adversarial re-ID on de-identified text, and pitfalls in LLM-based report anonymization.
+
 ## 📄 About This Project
 This project adapts the **[OWASP Top 10 for Large Language Model Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)** to the **healthcare** domain — producing a **specialized threat model** that identifies, categorizes, and mitigates risks unique to medical, clinical, and public health contexts.
 
@@ -128,4 +138,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 - **Framework:** Adapted from the [OWASP Top 10 for Large Language Model Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 - **Data & References:** Curated with input from patient advocates, clinicians, and AI safety researchers
 - **License:** MIT (unless otherwise noted)
+
 
