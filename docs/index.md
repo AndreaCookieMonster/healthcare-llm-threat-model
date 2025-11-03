@@ -41,6 +41,7 @@ This catalog maps recent, **healthcare-relevant AI vulnerabilities (CVEs)** to t
   - **Data poisoning & backdoors:** [Training-data poisoning of medical LLMs]({{ site.baseurl }}/additions/2025-10/training-data-poisoning-med-llms.md), [BadCLM backdoor in EHR models]({{ site.baseurl }}/additions/2025-10/badclm-ehr-backdoor.md)
   - **Privacy & disclosure:** [DIRI patient re-identification]({{ site.baseurl }}/additions/2025-10/patient-reidentification-diri.md), [Radiology report anonymization pitfalls]({{ site.baseurl }}/additions/2025-10/radiology-report-anonymization-llms.md)
   - **Governance & safety messaging:** [Declining medical safety disclaimers]({{ site.baseurl }}/additions/2025-10/declining-safety-disclaimers.md)
+- **References:** [Prompt injection attacks on vision-language models in oncology (Nat Commun 2025)](https://doi.org/10.1038/s41467-024-55631-x) · [Prompt injection attacks on vision-language models for surgical decision support (medRxiv 2025)](https://doi.org/10.1101/2025.07.16.25331645) · [Multi-model assurance analysis showing large language models are highly vulnerable to adversarial hallucination attacks during clinical decision support (Commun Med 2025)](https://doi.org/10.1038/s43856-025-01021-3) · [Medical large language models are vulnerable to data-poisoning attacks (Nat Med 2025)](https://doi.org/10.1038/s41591-024-03445-1) · [BadCLM: Backdoor Attack in Clinical Language Models for Electronic Health Records (arXiv 2024)](https://pubmed.ncbi.nlm.nih.gov/40417555/) · [DIRI: Adversarial Patient Reidentification with Large Language Models for Evaluating Clinical Text Anonymization (arXiv 2025)](https://pubmed.ncbi.nlm.nih.gov/40502277/) · [Automated anonymization of radiology reports: comparison of publicly available NLP and large language models (Int J Med Inform 2024)](https://pubmed.ncbi.nlm.nih.gov/39480533/) · [A longitudinal analysis of declining medical safety messaging in generative AI models (npj Digit Med 2025)](https://doi.org/10.1038/s41746-025-01943-1)
 
 ## LLM01 — Prompt Injection
 **Healthcare note:** Malicious prompts cause tools/connectors to leak PHI or perform unsafe actions.
@@ -48,6 +49,7 @@ This catalog maps recent, **healthcare-relevant AI vulnerabilities (CVEs)** to t
 - **CVE entries (last 24 months):** _None identified that are both AI-specific and healthcare-specific._
   Add incidents here even if non-CVE (e.g., red-teaming findings), so governance can act.
 - _October 2025 additions:_ [Medical VLM prompt injection (oncology)]({{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-oncology.md) · [Surgical video VLM prompt injection]({{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-surgical-video.md) · [Adversarial hallucination attacks in CDS]({{ site.baseurl }}/additions/2025-10/adversarial-hallucination-attacks-cds.md)
+- **References:** [Prompt injection attacks on vision-language models in oncology (Nat Commun 2025)](https://doi.org/10.1038/s41467-024-55631-x) · [Prompt injection attacks on vision-language models for surgical decision support (medRxiv 2025)](https://doi.org/10.1101/2025.07.16.25331645) · [Multi-model assurance analysis showing large language models are highly vulnerable to adversarial hallucination attacks during clinical decision support (Commun Med 2025)](https://doi.org/10.1038/s43856-025-01021-3)
 
 ---
 
@@ -57,6 +59,7 @@ This catalog maps recent, **healthcare-relevant AI vulnerabilities (CVEs)** to t
 - **CVE entries (last 24 months):** _None identified that squarely fit this category._
   See LLM05/06 for post-compromise impact that can drive unsafe outputs.
 - _October 2025 additions:_ [Medical VLM prompt injection (oncology)]({{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-oncology.md) · [Surgical video VLM prompt injection]({{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-surgical-video.md) · [Adversarial hallucination attacks in CDS]({{ site.baseurl }}/additions/2025-10/adversarial-hallucination-attacks-cds.md) · [DIRI patient re-identification]({{ site.baseurl }}/additions/2025-10/patient-reidentification-diri.md) · [Radiology report anonymization pitfalls]({{ site.baseurl }}/additions/2025-10/radiology-report-anonymization-llms.md) · [Declining medical safety disclaimers]({{ site.baseurl }}/additions/2025-10/declining-safety-disclaimers.md)
+- **References:** [Prompt injection attacks on vision-language models in oncology (Nat Commun 2025)](https://doi.org/10.1038/s41467-024-55631-x) · [Prompt injection attacks on vision-language models for surgical decision support (medRxiv 2025)](https://doi.org/10.1101/2025.07.16.25331645) · [Multi-model assurance analysis showing large language models are highly vulnerable to adversarial hallucination attacks during clinical decision support (Commun Med 2025)](https://doi.org/10.1038/s43856-025-01021-3) · [DIRI: Adversarial Patient Reidentification with Large Language Models for Evaluating Clinical Text Anonymization (arXiv 2025)](https://pubmed.ncbi.nlm.nih.gov/40502277/) · [Automated anonymization of radiology reports: comparison of publicly available NLP and large language models (Int J Med Inform 2024)](https://pubmed.ncbi.nlm.nih.gov/39480533/) · [A longitudinal analysis of declining medical safety messaging in generative AI models (npj Digit Med 2025)](https://doi.org/10.1038/s41746-025-01943-1)
 
 ---
 
@@ -65,6 +68,7 @@ This catalog maps recent, **healthcare-relevant AI vulnerabilities (CVEs)** to t
 
 - **CVE entries (last 24 months):** _None identified yet as CVEs._
 - _October 2025 additions:_ [Training-data poisoning of medical LLMs]({{ site.baseurl }}/additions/2025-10/training-data-poisoning-med-llms.md) · [BadCLM backdoor in EHR models]({{ site.baseurl }}/additions/2025-10/badclm-ehr-backdoor.md)
+- **References:** [Medical large language models are vulnerable to data-poisoning attacks (Nat Med 2025)](https://doi.org/10.1038/s41591-024-03445-1) · [BadCLM: Backdoor Attack in Clinical Language Models for Electronic Health Records (arXiv 2024)](https://pubmed.ncbi.nlm.nih.gov/40417555/)
 
 ---
 
@@ -97,6 +101,7 @@ This catalog maps recent, **healthcare-relevant AI vulnerabilities (CVEs)** to t
 | **CVE-2025-21384** | Secondary | Authenticated SSRF → unauthorized internal data access. | [NVD](https://nvd.nist.gov/vuln/detail/CVE-2025-21384) |
 | **CVE-2025-58756 / -58757** | Secondary | RCE on imaging/AI nodes enables **DICOM/PHI exfiltration** after compromise. | [NVD 58756](https://nvd.nist.gov/vuln/detail/CVE-2025-58756) · [NVD 58757](https://nvd.nist.gov/vuln/detail/CVE-2025-58757) |
 - _October 2025 additions:_ [DIRI patient re-identification]({{ site.baseurl }}/additions/2025-10/patient-reidentification-diri.md) · [Radiology report anonymization pitfalls]({{ site.baseurl }}/additions/2025-10/radiology-report-anonymization-llms.md)
+- **References:** [DIRI: Adversarial Patient Reidentification with Large Language Models for Evaluating Clinical Text Anonymization (arXiv 2025)](https://pubmed.ncbi.nlm.nih.gov/40502277/) · [Automated anonymization of radiology reports: comparison of publicly available NLP and large language models (Int J Med Inform 2024)](https://pubmed.ncbi.nlm.nih.gov/39480533/)
 
 **Mitigation emphasis (LLM06):** Context minimization (redact PHI at prompt/connector boundaries), DLP on egress, block metadata/private ranges, micro-segment AI runtimes ↔ EHR/FHIR, anomaly detection (bulk reads, unusual connector targets, atypical model-load behavior).
 
@@ -126,6 +131,7 @@ This catalog maps recent, **healthcare-relevant AI vulnerabilities (CVEs)** to t
 
 - **CVE entries (last 24 months):** _None identified._
 - _October 2025 additions:_ [Adversarial hallucination attacks in CDS]({{ site.baseurl }}/additions/2025-10/adversarial-hallucination-attacks-cds.md) · [Declining medical safety disclaimers]({{ site.baseurl }}/additions/2025-10/declining-safety-disclaimers.md)
+- **References:** [Multi-model assurance analysis showing large language models are highly vulnerable to adversarial hallucination attacks during clinical decision support (Commun Med 2025)](https://doi.org/10.1038/s43856-025-01021-3) · [A longitudinal analysis of declining medical safety messaging in generative AI models (npj Digit Med 2025)](https://doi.org/10.1038/s41746-025-01943-1)
 
 ---
 

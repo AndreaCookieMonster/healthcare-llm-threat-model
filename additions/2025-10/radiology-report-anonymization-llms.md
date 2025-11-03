@@ -17,8 +17,7 @@ Comparative evaluations show mixed de-identification performance and risk of ove
 - Prefer specialized de-ID pipelines with high-recall PHI detectors + calibrated post-processing.  
 - Human QA for releases; require dataset-specific measurement of PHI recall/precision and leakage drills.
 
-**Evidence (peer-reviewed)**  
-- PubMed: PMID **39480533**, “Automated anonymization of radiology reports: comparison of publicly available NLP and large language models,” *Int J Med Inform* 2024.  
-  https://pubmed.ncbi.nlm.nih.gov/39480533/
+**Evidence (peer-reviewed)**
+- [Automated anonymization of radiology reports: comparison of publicly available NLP and large language models (Int J Med Inform 2024)](https://pubmed.ncbi.nlm.nih.gov/39480533/)
 
 **Tags:** privacy, de-identification, radiology, PHI

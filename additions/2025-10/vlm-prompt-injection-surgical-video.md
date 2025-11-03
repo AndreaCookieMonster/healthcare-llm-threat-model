@@ -18,8 +18,7 @@ In laparoscopic/surgical video decision support, time-varying visual/textual ove
 - Temporal consistency checks; abstain/alert on injection suspicion.  
 - Separate clinical UI from raw model text; require clin-review approvals.
 
-**Evidence (preprint, NIH-indexed)**  
-- PubMed: PMID **40778151**, “Prompt injection attacks on vision-language models for surgical decision support,” medRxiv 2025. DOI: 10.1101/2025.07.16.25331645.  
-  https://pubmed.ncbi.nlm.nih.gov/40778151/
+**Evidence (preprint, NIH-indexed)**
+- [Prompt injection attacks on vision-language models for surgical decision support (medRxiv 2025)](https://doi.org/10.1101/2025.07.16.25331645) — [PubMed](https://pubmed.ncbi.nlm.nih.gov/40778151/)
 
 **Tags:** vlm, surgery, video, prompt-injection

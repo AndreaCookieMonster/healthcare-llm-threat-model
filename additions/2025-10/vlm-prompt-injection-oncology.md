@@ -20,9 +20,7 @@ Embedded sub-visual or overlaid prompts inside medical images can reliably steer
 - Defense-in-depth prompts + constrained decoding; adversarially trained detectors for overlaid/hidden text; evaluation gates before clinical use.
 
 **Evidence (peer-reviewed & code)**
-- PubMed: PMID **39890777**, “Prompt injection attacks on vision language models in oncology,” *Nat Commun* 2025;16(1):1239. PMCID **PMC11785991**. DOI: 10.1038/s41467-024-55631-x.
-  https://pubmed.ncbi.nlm.nih.gov/39890777/  |  https://pmc.ncbi.nlm.nih.gov/articles/PMC11785991/
-- Code: KatherLab “Prompt Injection Attacks” repo with reproducible oncology VLM exploits and evaluation scripts.
-  https://github.com/KatherLab/prompt_injection_attacks
+- [Prompt injection attacks on vision-language models in oncology (Nat Commun 2025)](https://doi.org/10.1038/s41467-024-55631-x) — [PubMed](https://pubmed.ncbi.nlm.nih.gov/39890777/) · [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC11785991/)
+- Code: [KatherLab “Prompt Injection Attacks”](https://github.com/KatherLab/prompt_injection_attacks) repo with reproducible oncology VLM exploits and evaluation scripts.
 
 **Tags:** vlm, oncology, prompt-injection, supply-chain, patient-provided-data
