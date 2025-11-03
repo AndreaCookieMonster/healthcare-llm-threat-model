@@ -1,3 +1,9 @@
+---
+layout: default
+title: Declining medical safety disclaimers in GenAI models
+description: Safety disclaimers in general-purpose medical chatbots are eroding over time, increasing clinical risk.
+---
+
 # Declining medical safety disclaimers in GenAI models
 
 **Why it matters (impact)**  

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Healthcare LLM Threat Catalog
+description: Catalog of healthcare-relevant LLM vulnerabilities mapped to the OWASP Top-10.
+---
+
 # Healthcare LLM Threat Catalog
 
 **OWASP Top-10 for LLM Applications × Healthcare Context × CVEs (last two years)**  

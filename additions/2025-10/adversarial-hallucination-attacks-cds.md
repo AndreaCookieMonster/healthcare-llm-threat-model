@@ -1,3 +1,9 @@
+---
+layout: default
+title: Adversarial hallucination attacks in clinical decision support
+description: Clinical decision-support LLMs can be manipulated to hallucinate unsafe facts via adversarial case tweaks.
+---
+
 # Adversarial hallucination attacks in clinical decision support
 
 **Why it matters (impact)**  

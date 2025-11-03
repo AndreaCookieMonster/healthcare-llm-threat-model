@@ -1,3 +1,9 @@
+---
+layout: default
+title: October 2025 Additions
+description: High-impact LLM vulnerabilities in healthcare surfaced in October 2025.
+---
+
 # October 2025 Additions: High-Impact LLM Vulnerabilities in Healthcare
 
 Curated additions not yet captured in the repo’s Top 10 “threat models,” but important for risk registers, evaluations, and procurement reviews. Each card includes an OWASP LLM Top-10 mapping.
