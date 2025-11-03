@@ -1,3 +1,9 @@
+---
+layout: default
+title: Adversarial re-identification on de-identified clinical text (DIRI)
+description: Targeted prompts can re-identify patients from supposedly de-identified clinical narratives.
+---
+
 # Adversarial re-identification on de-identified clinical text (DIRI)
 
 **Why it matters (impact)**  
