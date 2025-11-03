@@ -17,8 +17,7 @@ Across 2022–2025, medical disclaimers in LLM/VLM outputs fell to ~1%. As capab
 - Enforce policy-driven, context-aware disclaimers and escalation language for clinical risk categories.  
 - Governance tests: block production when disclaimer rates fall below thresholds for high-risk intents.
 
-**Evidence (peer-reviewed)**  
-- PubMed: PMID **41038984**, “A longitudinal analysis of declining medical safety messaging in generative AI models,” *npj Digit Med* 2025;8:592. PMCID **PMC12491556**. DOI: 10.1038/s41746-025-01943-1.  
-  https://pubmed.ncbi.nlm.nih.gov/41038984/
+**Evidence (peer-reviewed)**
+- [A longitudinal analysis of declining medical safety messaging in generative AI models (npj Digit Med 2025)](https://doi.org/10.1038/s41746-025-01943-1) — [PubMed](https://pubmed.ncbi.nlm.nih.gov/41038984/)
 
 **Tags:** safety, governance, disclaimers, patient-facing

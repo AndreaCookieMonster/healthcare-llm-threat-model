@@ -17,8 +17,7 @@ Demonstrates implantable triggers during fine-tuning that cause targeted misbeha
 - Fine-tune with strict data provenance; run backdoor detection (activation clustering, spectral methods).  
 - Disallow deployment without trigger-sweep tests and kill-switch policies.
 
-**Evidence (preprint, NIH-indexed)**  
-- PubMed: PMID **40417555**, “BadCLM: Backdoor Attack in Clinical Language Models for Electronic Health Records,” arXiv-indexed in PubMed 2024.  
-  https://pubmed.ncbi.nlm.nih.gov/40417555/
+**Evidence (preprint, NIH-indexed)**
+- [BadCLM: Backdoor Attack in Clinical Language Models for Electronic Health Records (arXiv 2024)](https://pubmed.ncbi.nlm.nih.gov/40417555/)
 
 **Tags:** backdoor, EHR, fine-tuning, poisoning

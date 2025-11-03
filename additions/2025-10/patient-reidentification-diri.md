@@ -17,8 +17,7 @@ Demonstrates that LLMs can facilitate adversarial re-identification against de-i
 - Layered de-identification (rule-based + ML) plus risk-based release; red-teaming with re-identification probes before data sharing.  
 - Minimize model access to longitudinal context unless essential; apply privacy-attacks testing in ML governance.
 
-**Evidence (preprint, NIH-indexed)**  
-- PubMed: PMID **40502277**, “DIRI: Adversarial Patient Reidentification with Large Language Models for Evaluating Clinical Text Anonymization,” arXiv-indexed in PubMed 2025.  
-  https://pubmed.ncbi.nlm.nih.gov/40502277/
+**Evidence (preprint, NIH-indexed)**
+- [DIRI: Adversarial Patient Reidentification with Large Language Models for Evaluating Clinical Text Anonymization (arXiv 2025)](https://pubmed.ncbi.nlm.nih.gov/40502277/)
 
 **Tags:** privacy, re-identification, de-identification, PHI
