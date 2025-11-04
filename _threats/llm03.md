@@ -1,0 +1,36 @@
+---
+id: LLM03
+title: 'Training Data Poisoning'
+slug: 'llm03--training-data-poisoning'
+summary: 'Tainted imaging or corpora subvert clinical models and introduce backdoors.'
+tags: ['data-integrity', 'poisoning', 'model-safety']
+last_updated: '2025-03-17'
+healthcare_note: 'Tainted imaging/corpus subverts clinical models.'
+cve_window: 'last-24-months'
+resources:
+  - title: 'Medical large language models are vulnerable to data-poisoning attacks (Nat Med 2025)'
+    url: 'https://doi.org/10.1038/s41591-024-03445-1'
+  - title:
+      'BadCLM: Backdoor Attack in Clinical Language Models for Electronic Health Records (arXiv
+      2024)'
+    url: 'https://pubmed.ncbi.nlm.nih.gov/40417555/'
+  - title: 'Training-data poisoning of medical LLMs'
+    url: '/additions/2025-10/training-data-poisoning-med-llms/'
+  - title: 'BadCLM EHR backdoor'
+    url: '/additions/2025-10/badclm-ehr-backdoor/'
+---
+
+## CVE entries (last 24 months)
+
+_None identified yet as CVEs._
+
+## References
+
+- Experimental evidence:
+  [Medical large language models are vulnerable to data-poisoning attacks (Nat Med 2025)](https://doi.org/10.1038/s41591-024-03445-1)
+- Backdoor case study:
+  [BadCLM: Backdoor Attack in Clinical Language Models for Electronic Health Records (arXiv 2024)](https://pubmed.ncbi.nlm.nih.gov/40417555/)
+- Field exercise notes:
+  [Training-data poisoning of medical LLMs](/additions/2025-10/training-data-poisoning-med-llms/)
+- EHR exploitation playbook:
+  [BadCLM backdoor in EHR models](/additions/2025-10/badclm-ehr-backdoor/)

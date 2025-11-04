@@ -1,0 +1,26 @@
+name: Docs Quality
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+      - '**/*.yml'
+      - '**/*.yaml'
+      - 'scripts/**'
+      - '_threats/**'
+  workflow_dispatch:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - name: Install deps
+        run: |
+          npm i --no-audit --no-fund
+          pipx install yamllint
+      - name: Lint & Validate
+        run: npm run lint
+      - name: Build catalog index
+        run: npm run build:index
