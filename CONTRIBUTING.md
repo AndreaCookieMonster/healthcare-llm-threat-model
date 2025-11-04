@@ -59,9 +59,11 @@ You can contribute in **two main ways**:
 
 ## 🔗 Link health checks
 
-We run automated link validation in CI for both the source files and the built GitHub Pages site. To reproduce the checks locally:
+We run automated link validation in CI for both the source files and the built GitHub Pages site.
+To reproduce the checks locally:
 
-1. Ensure you have Docker available (the Makefile uses the `lycheeverse/lychee` container). Alternatively, install [`lychee`](https://github.com/lycheeverse/lychee) via Cargo.
+1. Ensure you have Docker available (the Makefile uses the `lycheeverse/lychee` container).
+   Alternatively, install [`lychee`](https://github.com/lycheeverse/lychee) via Cargo.
 2. (Optional) Build the site locally so `_site/` exists:
    ```bash
    bundle exec jekyll build
@@ -70,13 +72,16 @@ We run automated link validation in CI for both the source files and the built G
    ```bash
    make linkcheck
    ```
-   The first pass scans the repository sources. If `_site/` is present, a second pass scans the generated HTML for anchor issues.
+   The first pass scans the repository sources.
+   If `_site/` is present, a second pass scans the generated HTML for anchor issues.
 
-For obvious redirect/HTTPS fixes you can run the auto-fix helper (requires Python 3 and `requests`):
+For obvious redirect/HTTPS fixes you can run the auto-fix helper (requires Python 3 and
+`requests`):
 
 ```bash
 python -m pip install requests
 python scripts/fix_links.py
 ```
 
-The script rewrites URLs in Markdown/HTML files when it safely resolves a redirect or detects an HTTPS endpoint for an HTTP link. Review and commit the changes before opening a pull request.
+The script rewrites URLs in Markdown/HTML files when it safely resolves a redirect or detects an
+HTTPS endpoint for an HTTP link. Review and commit the changes before opening a pull request.
