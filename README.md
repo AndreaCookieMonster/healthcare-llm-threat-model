@@ -3,7 +3,7 @@
 ## Latest additions — Oct 2025
 
 We’ve added a focused pack of **new, high-impact LLM vulnerabilities in healthcare** that are not
-yet reflected in the Top-10 set. See: [additions/2025-10/index.md](./additions/2025-10/index.md)
+yet reflected in the Top-10 set. 
 
 Highlights:
 
@@ -102,14 +102,6 @@ Each threat entry includes:
 
 ---
 
-## 🚀 Getting Started
-
-You can consume this resource in two ways:
-
-- **As a live reference**: Browse the
-  [GitHub Pages deployment](https://andreacookiemonster.github.io/healthcare-llm-threat-model/).
-- **As a dataset**: Download `data/LLM_Threat_Model_Healthcare-2.xlsx` to work with the threat model
-  in your own tooling.
 
 ---
 
