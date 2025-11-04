@@ -1,0 +1,118 @@
+[
+  {
+    "id": "LLM01",
+    "title": "Prompt Injection",
+    "slug": "llm01--prompt-injection",
+    "summary": "Malicious prompts cause tools and connectors to leak PHI or perform unsafe actions.",
+    "tags": [
+      "injection",
+      "workflow",
+      "healthcare"
+    ],
+    "updated": "2025-03-17"
+  },
+  {
+    "id": "LLM02",
+    "title": "Insecure Output Handling",
+    "slug": "llm02--insecure-output-handling",
+    "summary": "Applications treat LLM output as executable instructions, enabling unsafe routing or orders.",
+    "tags": [
+      "output",
+      "workflow",
+      "abuse"
+    ],
+    "updated": "2025-03-17"
+  },
+  {
+    "id": "LLM03",
+    "title": "Training Data Poisoning",
+    "slug": "llm03--training-data-poisoning",
+    "summary": "Tainted imaging or corpora subvert clinical models and introduce backdoors.",
+    "tags": [
+      "data-integrity",
+      "poisoning",
+      "model-safety"
+    ],
+    "updated": "2025-03-17"
+  },
+  {
+    "id": "LLM04",
+    "title": "Model Denial of Service",
+    "slug": "llm04--model-denial-of-service",
+    "summary": "Cost spikes or downtime disrupt clinical triage and imaging support.",
+    "tags": [
+      "availability",
+      "operations"
+    ],
+    "updated": "2025-03-17"
+  },
+  {
+    "id": "LLM05",
+    "title": "Supply Chain Vulnerabilities",
+    "slug": "llm05--supply-chain-vulnerabilities",
+    "summary": "Managed AI services and libraries pull SSRF and unsafe deserialization into care delivery.",
+    "tags": [
+      "supply-chain",
+      "ssrf",
+      "rce"
+    ],
+    "updated": "2025-03-17"
+  },
+  {
+    "id": "LLM06",
+    "title": "Sensitive Information Disclosure",
+    "slug": "llm06--sensitive-information-disclosure",
+    "summary": "PHI leaks via connectors, logging, or post-compromise exfiltration.",
+    "tags": [
+      "privacy",
+      "ssrf",
+      "exfiltration"
+    ],
+    "updated": "2025-03-17"
+  },
+  {
+    "id": "LLM07",
+    "title": "Insecure Plugin / Connector Design",
+    "slug": "llm07--insecure-plugin-connector-design",
+    "summary": "Over-trusted data connections behave like plugins and expose internal systems.",
+    "tags": [
+      "connectors",
+      "ssrf",
+      "governance"
+    ],
+    "updated": "2025-03-17"
+  },
+  {
+    "id": "LLM08",
+    "title": "Excessive Agency",
+    "slug": "llm08--excessive-agency",
+    "summary": "Over-permissioned agents trigger real-world actions without guardrails.",
+    "tags": [
+      "automation",
+      "governance"
+    ],
+    "updated": "2025-03-17"
+  },
+  {
+    "id": "LLM09",
+    "title": "Overreliance",
+    "slug": "llm09--overreliance",
+    "summary": "Clinicians over-trust AI outputs without governance, amplifying harmful hallucinations.",
+    "tags": [
+      "human-factors",
+      "hallucination"
+    ],
+    "updated": "2025-03-17"
+  },
+  {
+    "id": "LLM10",
+    "title": "Model Theft",
+    "slug": "llm10--model-theft",
+    "summary": "Attackers steal tuned clinical models after runtime compromise or misconfiguration.",
+    "tags": [
+      "intellectual-property",
+      "rce"
+    ],
+    "updated": "2025-03-17"
+  }
+]

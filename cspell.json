@@ -1,0 +1,10 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "CDS","EHR","PHI","VLM","BadCLM","oncology","redteaming","co-design","LightCollective"
+  ],
+  "ignorePaths": [
+    "node_modules","dist","_site","**/*.png","**/*.jpg","**/*.svg"
+  ]
+}

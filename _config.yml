@@ -1,3 +1,13 @@
 title: LLM Threat Model for Healthcare
 description: A fast, working GitHub Pages site listing healthcare LLM threats with links.
 theme: jekyll-theme-cayman
+collections:
+  threats:
+    output: true
+    permalink: /:collection/:name/
+defaults:
+  - scope: { path: '_threats', type: 'threats' }
+    values: { layout: 'threat', toc: true }
+kramdown:
+  auto_ids: true
+  transliterated_header_ids: true
