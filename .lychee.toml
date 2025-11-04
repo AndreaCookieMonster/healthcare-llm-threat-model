@@ -1,0 +1,11 @@
+include = ["**/*.md", "**/*.html", "**/*.rst", "**/*.yml"]
+exclude_path = ["node_modules", "vendor", "tmp", "_site/assets/**"]
+# Ignore localhost and mailto, allow anchors to be checked
+exclude = ["^mailto:", "^http://localhost", "^http://127\\.0\\.0\\.1", "^https?://0\\.0\\.0\\.0"]
+max_concurrency = 20
+timeout = "20s"
+retries = 2
+# Treat these as OK (some sites block HEAD or have odd codes)
+accepted = [200, 201, 202, 203, 204, 206, 301, 302, 303, 307, 308]
+# Respect robots / rate-limits from CI
+user_agent = "lychee-ci"
