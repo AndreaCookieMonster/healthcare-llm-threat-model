@@ -10,9 +10,9 @@ healthcare_note:
 cve_window: 'last-24-months'
 resources:
   - title: 'Adversarial hallucination attacks in CDS'
-    url: '/additions/2025-10/adversarial-hallucination-attacks-cds/'
+    url: '{{ site.baseurl }}/additions/2025-10/adversarial-hallucination-attacks-cds/'
   - title: 'Declining medical safety disclaimers'
-    url: '/additions/2025-10/declining-safety-disclaimers/'
+    url: '{{ site.baseurl }}/additions/2025-10/declining-safety-disclaimers/'
   - title:
       'Multi-model assurance analysis showing large language models are highly vulnerable to
       adversarial hallucination attacks during clinical decision support (Commun Med 2025)'

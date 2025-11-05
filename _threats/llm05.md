@@ -12,11 +12,11 @@ healthcare_note:
 cve_window: 'last-24-months'
 resources:
   - title: 'Medical VLM prompt injection (oncology)'
-    url: '/additions/2025-10/vlm-prompt-injection-oncology/'
+    url: '{{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-oncology/'
   - title: 'Training-data poisoning of medical LLMs'
-    url: '/additions/2025-10/training-data-poisoning-med-llms/'
+    url: '{{ site.baseurl }}/additions/2025-10/training-data-poisoning-med-llms/'
   - title: 'BadCLM backdoor in EHR models'
-    url: '/additions/2025-10/badclm-ehr-backdoor/'
+    url: '{{ site.baseurl }}/additions/2025-10/badclm-ehr-backdoor/'
 ---
 
 ## CVE entries (last 24 months)

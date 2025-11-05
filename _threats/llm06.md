@@ -9,9 +9,9 @@ healthcare_note: 'PHI leakage via connectors, logs/telemetry, or post-compromise
 cve_window: 'last-24-months'
 resources:
   - title: 'DIRI patient re-identification'
-    url: '/additions/2025-10/patient-reidentification-diri/'
+    url: '{{ site.baseurl }}/additions/2025-10/patient-reidentification-diri/'
   - title: 'Radiology report anonymization pitfalls'
-    url: '/additions/2025-10/radiology-report-anonymization-llms/'
+    url: '{{ site.baseurl }}/additions/2025-10/radiology-report-anonymization-llms/'
   - title:
       'DIRI: Adversarial Patient Reidentification with Large Language Models for Evaluating Clinical
       Text Anonymization (arXiv 2025)'

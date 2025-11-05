@@ -19,11 +19,11 @@ resources:
       adversarial hallucination attacks during clinical decision support (Commun Med 2025)'
     url: 'https://doi.org/10.1038/s43856-025-01021-3'
   - title: 'Medical VLM prompt injection (oncology)'
-    url: '/additions/2025-10/vlm-prompt-injection-oncology/'
+    url: '{{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-oncology/'
   - title: 'Surgical video VLM prompt injection'
-    url: '/additions/2025-10/vlm-prompt-injection-surgical-video/'
+    url: '{{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-surgical-video/'
   - title: 'Adversarial hallucination attacks in CDS'
-    url: '/additions/2025-10/adversarial-hallucination-attacks-cds/'
+    url: '{{ site.baseurl }}/additions/2025-10/adversarial-hallucination-attacks-cds/'
 ---
 
 ## CVE entries (last 24 months)
