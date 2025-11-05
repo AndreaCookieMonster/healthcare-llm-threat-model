@@ -1,6 +1,8 @@
 title: LLM Threat Model for Healthcare
 description: A fast, working GitHub Pages site listing healthcare LLM threats with links.
 theme: jekyll-theme-cayman
+url: "https://andreacookiemonster.github.io"
+baseurl: "/healthcare-llm-threat-model"
 collections:
   threats:
     output: true
