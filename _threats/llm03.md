@@ -15,9 +15,9 @@ resources:
       2024)'
     url: 'https://pubmed.ncbi.nlm.nih.gov/40417555/'
   - title: 'Training-data poisoning of medical LLMs'
-    url: '/additions/2025-10/training-data-poisoning-med-llms/'
+    url: '{{ site.baseurl }}/additions/2025-10/training-data-poisoning-med-llms/'
   - title: 'BadCLM EHR backdoor'
-    url: '/additions/2025-10/badclm-ehr-backdoor/'
+    url: '{{ site.baseurl }}/additions/2025-10/badclm-ehr-backdoor/'
 ---
 
 ## CVE entries (last 24 months)
