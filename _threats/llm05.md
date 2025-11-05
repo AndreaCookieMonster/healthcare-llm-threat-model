@@ -31,8 +31,8 @@ resources:
 ## References
 
 - Prompt-injection mitigation pack:
-  [Medical VLM prompt injection (oncology)](/additions/2025-10/vlm-prompt-injection-oncology/)
+  [Medical VLM prompt injection (oncology)]({{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-oncology/)
 - Poisoning response drill:
-  [Training-data poisoning of medical LLMs](/additions/2025-10/training-data-poisoning-med-llms/)
+  [Training-data poisoning of medical LLMs]({{ site.baseurl }}/additions/2025-10/training-data-poisoning-med-llms/)
 - EHR-specific backdoor fallout:
-  [BadCLM backdoor in EHR models](/additions/2025-10/badclm-ehr-backdoor/)
+  [BadCLM backdoor in EHR models]({{ site.baseurl }}/additions/2025-10/badclm-ehr-backdoor/)
