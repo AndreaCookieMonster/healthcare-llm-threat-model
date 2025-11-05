@@ -2,6 +2,9 @@
 layout: default
 title: LLM-based radiology report anonymization pitfalls
 description: Evaluations show LLM anonymization pipelines leak residual PHI in radiology reports.
+permalink: /additions/2025-10/radiology-report-anonymization-llms/
+redirect_from:
+  - /additions/2025-10/radiology-report-anonymization-llms.md
 ---
 
 # LLM-based radiology report anonymization pitfalls

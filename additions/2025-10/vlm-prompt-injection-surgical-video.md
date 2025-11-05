@@ -4,6 +4,9 @@ title: Prompt injection on surgical video VLMs
 description:
   Surgical video decision-support models can be driven off course via overlaid or timed prompt
   injections.
+permalink: /additions/2025-10/vlm-prompt-injection-surgical-video/
+redirect_from:
+  - /additions/2025-10/vlm-prompt-injection-surgical-video.md
 ---
 
 # Prompt injection on surgical video VLMs

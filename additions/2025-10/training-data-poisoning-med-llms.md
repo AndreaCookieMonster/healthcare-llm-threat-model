@@ -3,6 +3,9 @@ layout: default
 title: Training-data poisoning of medical LLMs
 description:
   Targeted data poisoning can implant lasting malicious behaviors in medical language models.
+permalink: /additions/2025-10/training-data-poisoning-med-llms/
+redirect_from:
+  - /additions/2025-10/training-data-poisoning-med-llms.md
 ---
 
 # Training-data poisoning of medical LLMs
