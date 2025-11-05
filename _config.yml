@@ -3,6 +3,9 @@ description: A fast, working GitHub Pages site listing healthcare LLM threats wi
 theme: jekyll-theme-cayman
 url: "https://andreacookiemonster.github.io"
 baseurl: "/healthcare-llm-threat-model"
+permalink: pretty
+plugins:
+  - jekyll-redirect-from
 collections:
   threats:
     output: true
