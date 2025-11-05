@@ -3,6 +3,9 @@ layout: default
 title: BadCLM backdoor attacks on clinical language models (EHR)
 description:
   Poisoned EHR fine-tuning data can implant triggerable backdoors into clinical LLM assistants.
+permalink: /additions/2025-10/badclm-ehr-backdoor/
+redirect_from:
+  - /additions/2025-10/badclm-ehr-backdoor.md
 ---
 
 # BadCLM: backdoor attacks on clinical language models (EHR)

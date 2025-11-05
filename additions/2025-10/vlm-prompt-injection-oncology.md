@@ -4,6 +4,9 @@ title: Prompt injection on medical VLMs (oncology images)
 description:
   Oncology-focused vision-language models can be subverted by hidden prompts embedded in clinical
   imagery.
+permalink: /additions/2025-10/vlm-prompt-injection-oncology/
+redirect_from:
+  - /additions/2025-10/vlm-prompt-injection-oncology.md
 ---
 
 # Prompt injection on medical VLMs (oncology images)
