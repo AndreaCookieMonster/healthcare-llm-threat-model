@@ -3,130 +3,53 @@ layout: default
 title: Threat catalog
 permalink: /threats/
 ---
-
+<link rel="stylesheet" href="{{ '/assets/css/threats.css' | relative_url }}">
 <h1>Threat catalog</h1>
-
-{% assign items = site.threats | sort: 'title' %}
-{% assign tag_collection = ',' %}
-{% for t in items %}
-  {% if t.tags %}
-    {% for tag in t.tags %}
-      {% assign normalized_tag = tag | strip %}
-      {% assign marker = ',' | append: normalized_tag | append: ',' %}
-      {% unless tag_collection contains marker %}
-        {% assign tag_collection = tag_collection | append: normalized_tag | append: ',' %}
-      {% endunless %}
+<div class="th-toolbar">
+  <input id="th-search" class="th-search" type="search" placeholder="Search title, example, impact…">
+  <select id="th-risk" class="th-select">
+    <option value="">All risks</option>
+    {% assign risks = site.threats | map: 'risk_id' | uniq | sort %}
+    {% for r in risks %}
+      {% if r %}<option value="{{ r }}">{{ r }}</option>{% endif %}
     {% endfor %}
-  {% endif %}
-{% endfor %}
-{% assign tag_list = tag_collection | split: ',' | sort %}
-
-<div class="threats-controls">
-  <div class="threats-search">
-    <input
-      type="search"
-      id="threat-search"
-      name="threat-search"
-      placeholder="Search threats by name or summary"
-      aria-label="Search threats by name or summary"
-      autocomplete="off"
-    />
-  </div>
-  <div class="threat-tag-filters" role="group" aria-label="Filter threats by tag">
-    {% for tag in tag_list %}
-      {% unless tag == '' %}
-        <button type="button" class="threat-tag-button" data-tag="{{ tag | downcase | escape }}" aria-pressed="false">
-          {{ tag }}
-        </button>
-      {% endunless %}
-    {% endfor %}
-  </div>
+  </select>
+  <span class="th-count"><span id="th-count">0</span> items</span>
 </div>
-
-<div class="threat-grid" id="threat-grid">
+<div id="th-grid" class="th-grid">
+  {% assign items = site.threats | sort: 'title' %}
   {% for t in items %}
-    {% assign tag_string = '' %}
-    {% if t.tags %}
-      {% assign tag_string = t.tags | join: '|' %}
-    {% endif %}
-    <article
-      class="threat-card"
-      data-title="{{ t.title | downcase | escape }}"
-      data-summary="{{ t.summary | default: '' | strip_html | downcase | escape }}"
-      data-tags="{{ tag_string | downcase | escape }}"
-    >
-      <h2 class="threat-card__title">
-        <a href="{{ t.url | relative_url }}">{{ t.title }}</a>
-      </h2>
-      {% if t.summary %}
-        <p class="threat-card__summary">{{ t.summary }}</p>
-      {% endif %}
-      {% if t.tags %}
-        <ul class="threat-card__tags">
-          {% for tag in t.tags %}
-            <li class="threat-card__tag">{{ tag }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </article>
+    <div class="th-item"
+         data-risk="{{ t.risk_id | escape }}"
+         data-text="{{ t.title | downcase | escape }} {{ t.example | downcase | escape }} {{ t.impact | downcase | escape }} {{ t.tags | join:' ' | downcase | escape }}">
+      {% include threat-card.html
+         risk_id=t.risk_id title=t.title url=t.url
+         example=t.example impact=t.impact
+         mitigations=t.mitigations tags=t.tags summary=t.summary %}
+    </div>
   {% endfor %}
 </div>
-<p class="threat-grid__empty" id="threat-grid-empty">No threats match your current filters.</p>
-
 <script>
-  (function () {
-    const searchInput = document.querySelector('#threat-search');
-    const tagButtons = Array.from(document.querySelectorAll('.threat-tag-button'));
-    const cards = Array.from(document.querySelectorAll('.threat-card'));
-    const emptyState = document.querySelector('#threat-grid-empty');
-
-    function getActiveTags() {
-      return tagButtons
-        .filter((button) => button.classList.contains('is-active'))
-        .map((button) => button.dataset.tag);
-    }
-
-    function applyFilters() {
-      const searchValue = (searchInput?.value || '').trim().toLowerCase();
-      const activeTags = getActiveTags();
-      let visibleCount = 0;
-
-      cards.forEach((card) => {
-        const title = card.dataset.title || '';
-        const summary = card.dataset.summary || '';
-        const tags = (card.dataset.tags || '')
-          .split('|')
-          .map((tag) => tag.trim())
-          .filter(Boolean);
-
-        const matchesSearch = !searchValue || title.includes(searchValue) || summary.includes(searchValue);
-        const matchesTags = activeTags.length === 0 || activeTags.every((tag) => tags.includes(tag));
-        const shouldShow = matchesSearch && matchesTags;
-
-        card.hidden = !shouldShow;
-        if (shouldShow) {
-          visibleCount += 1;
-        }
-      });
-
-      if (emptyState) {
-        emptyState.classList.toggle('is-visible', visibleCount === 0);
-      }
-    }
-
-    if (searchInput) {
-      searchInput.addEventListener('input', applyFilters);
-      searchInput.addEventListener('search', applyFilters);
-    }
-
-    tagButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-        const isActive = button.classList.toggle('is-active');
-        button.setAttribute('aria-pressed', String(isActive));
-        applyFilters();
-      });
+(function(){
+  const q = document.getElementById('th-search');
+  const r = document.getElementById('th-risk');
+  const grid = document.getElementById('th-grid');
+  const items = Array.from(grid.querySelectorAll('.th-item'));
+  const count = document.getElementById('th-count');
+  function apply(){
+    const text = (q.value || '').trim().toLowerCase();
+    const risk = r.value;
+    let n=0;
+    items.forEach(el=>{
+      const okRisk = !risk || (el.dataset.risk===risk);
+      const okText = !text || el.dataset.text.indexOf(text) >= 0;
+      el.style.display = (okRisk && okText) ? '' : 'none';
+      if (okRisk && okText) n++;
     });
-
-    applyFilters();
-  })();
+    count.textContent = n;
+  }
+  q.addEventListener('input', apply);
+  r.addEventListener('change', apply);
+  apply();
+})();
 </script>
