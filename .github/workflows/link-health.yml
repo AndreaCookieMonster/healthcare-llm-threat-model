@@ -12,14 +12,21 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-      - name: Install bundler and deps
-        run: |
-          gem install bundler
-          bundle install || true
+      - name: Install Bundler 2.7.2
+        run: gem install bundler -v 2.7.2
+      - name: Cache Ruby gems
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Install gems
+        run: bundle _2.7.2_ install --path vendor/bundle --jobs 4 --retry 3
       - name: Build site (production, correct baseurl)
         env:
           JEKYLL_ENV: production
-        run: bundle exec jekyll build --baseurl "/healthcare-llm-threat-model"
+        run: bundle _2.7.2_ exec jekyll build --baseurl "/healthcare-llm-threat-model"
       - name: Check links on built site
         uses: lycheeverse/lychee-action@v2
         with:
