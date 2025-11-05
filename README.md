@@ -3,7 +3,7 @@
 ## Latest additions — Oct 2025
 
 We’ve added a focused pack of **new, high-impact LLM vulnerabilities in healthcare** that are not
-yet reflected in the Top-10 set. 
+yet reflected in the Top-10 set.
 
 Highlights:
 
