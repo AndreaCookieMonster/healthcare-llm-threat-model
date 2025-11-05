@@ -19,11 +19,11 @@ resources:
       adversarial hallucination attacks during clinical decision support (Commun Med 2025)'
     url: 'https://doi.org/10.1038/s43856-025-01021-3'
   - title: 'Medical VLM prompt injection (oncology)'
-    url: '{{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-oncology/'
+    url: "{{ '/additions/2025-10/vlm-prompt-injection-oncology/' | relative_url }}"
   - title: 'Surgical video VLM prompt injection'
-    url: '{{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-surgical-video/'
+    url: "{{ '/additions/2025-10/vlm-prompt-injection-surgical-video/' | relative_url }}"
   - title: 'Adversarial hallucination attacks in CDS'
-    url: '{{ site.baseurl }}/additions/2025-10/adversarial-hallucination-attacks-cds/'
+    url: "{{ '/additions/2025-10/adversarial-hallucination-attacks-cds/' | relative_url }}"
 ---
 
 ## CVE entries (last 24 months)
@@ -37,11 +37,11 @@ _None identified that are both AI-specific and healthcare-specific._ Capture non
 - OR workflow preprint: [Surgical VLM medRxiv preprint][llm01-surg]
 - Assurance findings: [Commun Med 2025 assurance analysis][llm01-assurance]
 - Field report:
-  [Medical VLM prompt injection (oncology)]({{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-oncology/)
+  [Medical VLM prompt injection (oncology)]({{ '/additions/2025-10/vlm-prompt-injection-oncology/' | relative_url }})
 - Surgical case study:
-  [Surgical video VLM prompt injection]({{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-surgical-video/)
+  [Surgical video VLM prompt injection]({{ '/additions/2025-10/vlm-prompt-injection-surgical-video/' | relative_url }})
 - Governance signal:
-  [Adversarial hallucination attacks in CDS]({{ site.baseurl }}/additions/2025-10/adversarial-hallucination-attacks-cds/)
+  [Adversarial hallucination attacks in CDS]({{ '/additions/2025-10/adversarial-hallucination-attacks-cds/' | relative_url }})
 
 [llm01-onc]: https://doi.org/10.1038/s41467-024-55631-x
 [llm01-surg]: https://doi.org/10.1101/2025.07.16.25331645

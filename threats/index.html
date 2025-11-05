@@ -3,10 +3,11 @@ layout: default
 title: Threat catalog
 permalink: /threats/
 ---
+
 <h1>Threat catalog</h1>
 <ul>
-{% assign items = site.threats | sort: "title" %}
-{% for t in items %}
-  <li><a href="{{ t.url | relative_url }}">{{ t.title }}</a></li>
-{% endfor %}
+  {% assign items = site.threats | sort: "title" %}
+  {% for t in items %}
+    <li><a href="{{ t.url | relative_url }}">{{ t.title }}</a></li>
+  {% endfor %}
 </ul>
