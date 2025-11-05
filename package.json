@@ -9,6 +9,7 @@
     "lint:frontmatter": "node scripts/validate-frontmatter.js",
     "lint:dup": "python3 scripts/find-dup-content.py",
     "lint": "npm run lint:md && npm run lint:spell && npm run lint:yaml && npm run lint:frontmatter && npm run lint:dup",
+    "build": "bundle exec jekyll build",
     "build:index": "node scripts/build-catalog-json.js"
   },
   "devDependencies": {
