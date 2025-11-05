@@ -35,9 +35,9 @@ egress, block metadata/private ranges, micro-segment AI runtimes ↔ EHR/FHIR, a
 ## References
 
 - De-identification red team:
-  [DIRI patient re-identification](/additions/2025-10/patient-reidentification-diri/)
+  [DIRI patient re-identification]({{ site.baseurl }}/additions/2025-10/patient-reidentification-diri/)
 - Imaging privacy audit:
-  [Radiology report anonymization pitfalls](/additions/2025-10/radiology-report-anonymization-llms/)
+  [Radiology report anonymization pitfalls]({{ site.baseurl }}/additions/2025-10/radiology-report-anonymization-llms/)
 - Clinical anonymization benchmark:
   [DIRI: Adversarial Patient Reidentification with Large Language Models for Evaluating Clinical Text Anonymization (arXiv 2025)](https://pubmed.ncbi.nlm.nih.gov/40502277/)
 - Operational anonymizer study:

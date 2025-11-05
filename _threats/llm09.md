@@ -30,9 +30,9 @@ _None identified._
 ## References
 
 - Governance failure case:
-  [Adversarial hallucination attacks in CDS](/additions/2025-10/adversarial-hallucination-attacks-cds/)
+  [Adversarial hallucination attacks in CDS]({{ site.baseurl }}/additions/2025-10/adversarial-hallucination-attacks-cds/)
 - Messaging drift tracker:
-  [Declining medical safety disclaimers](/additions/2025-10/declining-safety-disclaimers/)
+  [Declining medical safety disclaimers]({{ site.baseurl }}/additions/2025-10/declining-safety-disclaimers/)
 - Assurance signal:
   [Multi-model assurance analysis showing large language models are highly vulnerable to adversarial hallucination attacks during clinical decision support (Commun Med 2025)](https://doi.org/10.1038/s43856-025-01021-3)
 - Policy trend study:

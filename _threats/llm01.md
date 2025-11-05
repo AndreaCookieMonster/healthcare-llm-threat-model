@@ -37,11 +37,11 @@ _None identified that are both AI-specific and healthcare-specific._ Capture non
 - OR workflow preprint: [Surgical VLM medRxiv preprint][llm01-surg]
 - Assurance findings: [Commun Med 2025 assurance analysis][llm01-assurance]
 - Field report:
-  [Medical VLM prompt injection (oncology)](/additions/2025-10/vlm-prompt-injection-oncology/)
+  [Medical VLM prompt injection (oncology)]({{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-oncology/)
 - Surgical case study:
-  [Surgical video VLM prompt injection](/additions/2025-10/vlm-prompt-injection-surgical-video/)
+  [Surgical video VLM prompt injection]({{ site.baseurl }}/additions/2025-10/vlm-prompt-injection-surgical-video/)
 - Governance signal:
-  [Adversarial hallucination attacks in CDS](/additions/2025-10/adversarial-hallucination-attacks-cds/)
+  [Adversarial hallucination attacks in CDS]({{ site.baseurl }}/additions/2025-10/adversarial-hallucination-attacks-cds/)
 
 [llm01-onc]: https://doi.org/10.1038/s41467-024-55631-x
 [llm01-surg]: https://doi.org/10.1101/2025.07.16.25331645
