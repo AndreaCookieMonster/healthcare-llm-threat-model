@@ -25,7 +25,7 @@ actually hurt people: data exposure, mis-routing, misdiagnosis, and operational 
 
 ## Threat catalog
 
-- Browse the [full threat list]({{ site.baseurl }}/threats/) with filters, stable slugs, and JSON index support for
+- Browse the [full threat list]({{ '/threats/' | relative_url }}) with filters, stable slugs, and JSON index support for
   search.
 - Each threat lives in `_threats/` with structured front matter validated in CI.
 

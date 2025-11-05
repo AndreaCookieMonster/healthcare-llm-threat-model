@@ -15,9 +15,9 @@ resources:
       2024)'
     url: 'https://pubmed.ncbi.nlm.nih.gov/40417555/'
   - title: 'Training-data poisoning of medical LLMs'
-    url: '{{ site.baseurl }}/additions/2025-10/training-data-poisoning-med-llms/'
+    url: "{{ '/additions/2025-10/training-data-poisoning-med-llms/' | relative_url }}"
   - title: 'BadCLM EHR backdoor'
-    url: '{{ site.baseurl }}/additions/2025-10/badclm-ehr-backdoor/'
+    url: "{{ '/additions/2025-10/badclm-ehr-backdoor/' | relative_url }}"
 ---
 
 ## CVE entries (last 24 months)
@@ -31,6 +31,6 @@ _None identified yet as CVEs._
 - Backdoor case study:
   [BadCLM: Backdoor Attack in Clinical Language Models for Electronic Health Records (arXiv 2024)](https://pubmed.ncbi.nlm.nih.gov/40417555/)
 - Field exercise notes:
-  [Training-data poisoning of medical LLMs]({{ site.baseurl }}/additions/2025-10/training-data-poisoning-med-llms/)
+  [Training-data poisoning of medical LLMs]({{ '/additions/2025-10/training-data-poisoning-med-llms/' | relative_url }})
 - EHR exploitation playbook:
-  [BadCLM backdoor in EHR models]({{ site.baseurl }}/additions/2025-10/badclm-ehr-backdoor/)
+  [BadCLM backdoor in EHR models]({{ '/additions/2025-10/badclm-ehr-backdoor/' | relative_url }})

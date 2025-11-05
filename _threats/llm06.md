@@ -9,9 +9,9 @@ healthcare_note: 'PHI leakage via connectors, logs/telemetry, or post-compromise
 cve_window: 'last-24-months'
 resources:
   - title: 'DIRI patient re-identification'
-    url: '{{ site.baseurl }}/additions/2025-10/patient-reidentification-diri/'
+    url: "{{ '/additions/2025-10/patient-reidentification-diri/' | relative_url }}"
   - title: 'Radiology report anonymization pitfalls'
-    url: '{{ site.baseurl }}/additions/2025-10/radiology-report-anonymization-llms/'
+    url: "{{ '/additions/2025-10/radiology-report-anonymization-llms/' | relative_url }}"
   - title:
       'DIRI: Adversarial Patient Reidentification with Large Language Models for Evaluating Clinical
       Text Anonymization (arXiv 2025)'
@@ -35,9 +35,9 @@ egress, block metadata/private ranges, micro-segment AI runtimes ↔ EHR/FHIR, a
 ## References
 
 - De-identification red team:
-  [DIRI patient re-identification]({{ site.baseurl }}/additions/2025-10/patient-reidentification-diri/)
+  [DIRI patient re-identification]({{ '/additions/2025-10/patient-reidentification-diri/' | relative_url }})
 - Imaging privacy audit:
-  [Radiology report anonymization pitfalls]({{ site.baseurl }}/additions/2025-10/radiology-report-anonymization-llms/)
+  [Radiology report anonymization pitfalls]({{ '/additions/2025-10/radiology-report-anonymization-llms/' | relative_url }})
 - Clinical anonymization benchmark:
   [DIRI: Adversarial Patient Reidentification with Large Language Models for Evaluating Clinical Text Anonymization (arXiv 2025)](https://pubmed.ncbi.nlm.nih.gov/40502277/)
 - Operational anonymizer study:
